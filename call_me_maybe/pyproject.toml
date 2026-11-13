@@ -25,3 +25,7 @@ exclude = [
     '__pycache__',
     '^\.mypy_cache/'
 ]
+
+[[tool.mypy.overrides]]
+module = ["llm_sdk", "llm_sdk.*"]
+follow_imports = "skip"
